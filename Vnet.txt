@@ -1,0 +1,56 @@
+/subscriptions/16912e16-5fa8-4944-b25e-07da98629b7d/resourceGroups/Nawalgba2022/providers/Microsoft.Network/virtualNetworks/myVNet
+{
+    "name": "myVNet",
+    "id": "/subscriptions/16912e16-5fa8-4944-b25e-07da98629b7d/resourceGroups/Nawalgba2022/providers/Microsoft.Network/virtualNetworks/myVNet",
+    "etag": "W/\"7293f6ac-db90-44c2-8f4b-01b1488cc7f9\"",
+    "type": "Microsoft.Network/virtualNetworks",
+    "location": "eastus",
+    "tags": {},
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "3f1d2428-ccda-41a8-b410-c5361d278300",
+        "addressSpace": {
+            "addressPrefixes": [
+                "192.168.0.0/16"
+            ]
+        },
+        "subnets": [
+            {
+                "name": "myFrontendSubnet",
+                "id": "/subscriptions/16912e16-5fa8-4944-b25e-07da98629b7d/resourceGroups/Nawalgba2022/providers/Microsoft.Network/virtualNetworks/myVNet/subnets/myFrontendSubnet",
+                "etag": "W/\"7293f6ac-db90-44c2-8f4b-01b1488cc7f9\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "addressPrefix": "192.168.1.0/24",
+                    "networkSecurityGroup": {
+                        "id": "/subscriptions/16912e16-5fa8-4944-b25e-07da98629b7d/resourceGroups/Nawalgba2022/providers/Microsoft.Network/networkSecurityGroups/myFrontendNSG"
+                    },
+                    "ipConfigurations": [
+                        {
+                            "id": "/subscriptions/16912e16-5fa8-4944-b25e-07da98629b7d/resourceGroups/Nawalgba2022/providers/Microsoft.Network/networkInterfaces/myfrontendvm801/ipConfigurations/ipconfig1"
+                        }
+                    ]
+                },
+                "type": "Microsoft.Network/virtualNetworks/subnets"
+            },
+            {
+                "name": "myBackendSubnet",
+                "id": "/subscriptions/16912e16-5fa8-4944-b25e-07da98629b7d/resourceGroups/Nawalgba2022/providers/Microsoft.Network/virtualNetworks/myVNet/subnets/myBackendSubnet",
+                "etag": "W/\"7293f6ac-db90-44c2-8f4b-01b1488cc7f9\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "addressPrefix": "192.168.2.0/24",
+                    "networkSecurityGroup": {
+                        "id": "/subscriptions/16912e16-5fa8-4944-b25e-07da98629b7d/resourceGroups/Nawalgba2022/providers/Microsoft.Network/networkSecurityGroups/myBackendNSG"
+                    },
+                    "ipConfigurations": [
+                        {
+                            "id": "/subscriptions/16912e16-5fa8-4944-b25e-07da98629b7d/resourceGroups/Nawalgba2022/providers/Microsoft.Network/networkInterfaces/mybackendvm844/ipConfigurations/ipconfig1"
+                        }
+                    ]
+                },
+                "type": "Microsoft.Network/virtualNetworks/subnets"
+            }
+        ]
+    }
+}
